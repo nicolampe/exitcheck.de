@@ -1,0 +1,68 @@
+Bewertungsmethode
+Der Everto Unternehmenswertrechner nutzt das Multiplikator-Verfahren – eine marktorientierte Bewertungsmethode.
+
+Die Methode basiert auf einem Vergleich mit ähnlichen Unternehmen, die in der Vergangenheit verkauft wurden. Dabei werden folgende Schritte durchgeführt:
+
+Finanzkennzahlen wie EBIT (Ergebnis vor Zinsen und Steuern) werden herangezogen.
+Diese Kennzahlen werden mit den branchenüblichen Multiplikatoren multipliziert.
+Vergleichswerte aus Marktdaten dienen als Referenzpunkt zur Ersteinschätzung.
+Die Multiplikator-Methode ähnelt der Immobilienbewertung, bei der Preise pro Quadratmeter als Vergleichsmaßstab dienen. Allerdings ist es bei Unternehmen komplexer, da qualitative Faktoren wie Managementstrukturen oder Marktposition ebenfalls eine Rolle spielen.
+Multiplikatoren
+Multiplikatoren sind zentrale Faktoren zur Unternehmensbewertung, da sie einen marktüblichen Maßstab setzen.
+
+Es gibt zwei Hauptarten von Multiplikatoren:
+Entity-Multiplikatoren
+Beziehen sich auf das gesamte Unternehmen (Enterprise Value) und berücksichtigen alle Schulden und Vermögenswerte.
+Beispiele: EV/EBITDA (Unternehmenswert im Verhältnis zum Betriebsergebnis vor Abschreibungen), EV/Umsatz
+Equity-Multiplikatoren
+Fokussieren sich auf das Eigenkapital des Unternehmens.
+Kurs-Gewinn-Verhältnis (KGV), Kurs-Cashflow-Verhältnis
+Die Wahl des richtigen Multiplikators hängt von der Branche, der Unternehmensgröße und den Marktbedingungen ab. In der Praxis werden Multiplikatoren oft mit aktuellen Marktbenchmarks abgeglichen.
+Bewertungszu- und Abschläge
+Zu- und Abschläge helfen dabei, spezifische Unternehmensmerkmale realistischer in die Bewertung einzubeziehen.
+Einige Faktoren, die Abschläge verursachen können:
+
+Hohe Abhängigkeit von wenigen Kunden oder Lieferanten.
+Fehlende zweite Führungsebene.
+Umsatzschwankungen oder unregelmäßige Erträge.
+Zu den häufigsten Zuschlägen gehören:
+
+Stark skalierbares Geschäftsmodell.
+Diversifizierter Kundenstamm und stabile Ertragslage.
+Hoher Anteil an wiederkehrenden Umsätzen.
+Der Everto Rechner berücksichtigt automatisch bestimmte Standard-Abschläge, um eine realistische Ersteinschätzung zu ermöglichen.
+Unternehmenswert vs. Kaufpreis
+Es gibt einen wesentlichen Unterschied zwischen dem Unternehmenswert und dem tatsächlich erzielbaren Kaufpreis.
+
+Unternehmenswert: Dies ist der Gesamtwert eines Unternehmens auf Basis der Finanzkennzahlen (z. B. EBIT x Multiplikator).
+Kaufpreis: Der tatsächliche Verkaufspreis berücksichtigt zusätzliche Faktoren wie Schulden, Liquidität und nicht betriebsnotwendiges Vermögen.
+Beispiel einer Kaufpreisberechnung:
+Unternehmenswert – Schulden + nicht betriebsnotwendiges Vermögen = Kaufpreis
+Unser PDF-Report bietet eine klare Übersicht über beide Werte und zeigt Optimierungspotenziale zur Wertsteigerung.
+Beispiel einer Kaufpreisberechnung
+Unternehmenswert – Schulden + nicht betriebsnotwendiges Vermögen = Kaufpreis
+Kurs-Gewinn-Verhältnis (KGV), Kurs-Cashflow-Verhältnis
+Unser PDF-Report bietet eine klare Übersicht über beide Werte und zeigt Optimierungspotenziale zur Wertsteigerung.
+Datenanforderungen für eine genaue Bewertung
+Um eine präzise Unternehmensbewertung durchzuführen, werden verschiedene Finanz- und qualitative Daten benötigt.
+
+Wichtige Finanzdaten:
+
+Jahresabschlüsse der letzten drei Jahre
+Umsatz- und Kostenstruktur
+EBIT-Entwicklung
+Qualitative Faktoren:
+
+Markt- und Wettbewerbssituation
+Abhängigkeiten von Schlüsselpersonen oder Kunden
+Potenzielle Wachstumspotenziale
+Der Everto Rechner verarbeitet diese Daten anonym und sicher, um eine fundierte Ersteinschätzung zu bieten.
+Häufige Fehler bei der Unternehmensbewertung
+Viele Unternehmer machen typische Fehler bei der Bewertung, die zu unrealistischen Ergebnissen führen können.
+
+Zu den häufigsten Fehlern gehören:
+
+Nicht-Berücksichtigung von Schulden: Der Unternehmenswert ist nicht gleich dem Nettoverkaufswert.
+Unrealistische Erwartungen: Multiplikatoren können je nach Branche stark variieren.
+Vernachlässigung immaterieller Werte: Markenwert, Kundenbindung und Unternehmensstruktur werden oft unterschätzt.
+Mit dem Everto Unternehmenswertrechner erhalten Sie eine realistische Einschätzung und Hinweise zur Vermeidung typischer Fallstricke.

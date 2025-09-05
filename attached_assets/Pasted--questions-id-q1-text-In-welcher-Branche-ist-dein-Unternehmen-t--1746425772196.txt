@@ -1,0 +1,170 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "text": "In welcher Branche ist dein Unternehmen tätig?",
+      "type": "dropdown",
+      "options": ["Agentur", "SaaS", "E-Commerce", "Coaching / Training", "Dienstleistung (offline)", "Andere"],
+      "score": 0
+    },
+    {
+      "id": "q2",
+      "text": "Wie hoch ist dein aktueller Jahresumsatz (in €)?",
+      "type": "number",
+      "score_weight": 0.1
+    },
+    {
+      "id": "q3",
+      "text": "Wie hoch ist dein Betriebsergebnis VOR Geschäftsführerlohn (in €)?",
+      "type": "number",
+      "score_weight": 0.1
+    },
+    {
+      "id": "q4",
+      "text": "Wie viel zahlst du dir pro Jahr als Geschäftsführer (in €)?",
+      "type": "number",
+      "score_weight": 0.05
+    },
+    {
+      "id": "q5",
+      "text": "Welche Umsatzform dominiert dein Geschäft aktuell?",
+      "type": "single-choice",
+      "options": [
+        {"label": "Wiederkehrend (z. B. Retainer, MRR)", "value": 5},
+        {"label": "Mischmodell", "value": 3},
+        {"label": "Projektbasiert / Einzelverkäufe", "value": 1}
+      ],
+      "score_weight": 0.1
+    },
+    {
+      "id": "q6",
+      "text": "Wie lange bleiben Kunden durchschnittlich aktiv?",
+      "type": "single-choice",
+      "options": [
+        {"label": "12+ Monate", "value": 5},
+        {"label": "6–12 Monate", "value": 4},
+        {"label": "3–6 Monate", "value": 2},
+        {"label": "<3 Monate", "value": 1}
+      ],
+      "score_weight": 0.1
+    },
+    {
+      "id": "q7",
+      "text": "Wie viel Prozent deines Umsatzes kommt von deinen Top 3 Kunden?",
+      "type": "single-choice",
+      "options": [
+        {"label": "<20 %", "value": 5},
+        {"label": "20–40 %", "value": 3},
+        {"label": ">40 %", "value": 1}
+      ],
+      "score_weight": 0.05
+    },
+    {
+      "id": "q8",
+      "text": "Wie stark bist du in den letzten 12 Monaten gewachsen?",
+      "type": "single-choice",
+      "options": [
+        {"label": ">30 %", "value": 5},
+        {"label": "10–30 %", "value": 4},
+        {"label": "0–10 %", "value": 2},
+        {"label": "Geschrumpft", "value": 1}
+      ],
+      "score_weight": 0.05
+    },
+    {
+      "id": "q9",
+      "text": "Wie oft bist du operativ im Tagesgeschäft involviert?",
+      "type": "scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "invert_score": true,
+      "score_weight": 0.1
+    },
+    {
+      "id": "q10",
+      "text": "Gibt es dokumentierte Prozesse oder ein funktionierendes System?",
+      "type": "single-choice",
+      "options": [
+        {"label": "Ja – vollständig dokumentiert", "value": 5},
+        {"label": "Teilweise vorhanden", "value": 3},
+        {"label": "Nein – alles ist im Kopf", "value": 1}
+      ],
+      "score_weight": 0.05
+    },
+    {
+      "id": "q11",
+      "text": "Gibt es ein Führungsteam oder eine zweite Reihe?",
+      "type": "single-choice",
+      "options": [
+        {"label": "Ja – komplett selbstständig", "value": 5},
+        {"label": "Teilweise – ich entscheide noch das Meiste", "value": 3},
+        {"label": "Nein – alles hängt an mir", "value": 1}
+      ],
+      "score_weight": 0.05
+    },
+    {
+      "id": "q12",
+      "text": "Wann wäre für dich der ideale Zeitpunkt für einen Exit / eine Übergabe?",
+      "type": "dropdown",
+      "options": ["2025", "2026", "2027–2028", "2029 oder später", "Noch unklar"],
+      "urgency": {
+        "2025": "hot",
+        "2026": "warm",
+        "2027–2028": "cold",
+        "2029 oder später": "nurture",
+        "Noch unklar": "nurture"
+      }
+    },
+    {
+      "id": "q13",
+      "text": "Was wäre für dich der größte persönliche Gewinn durch einen Verkauf?",
+      "type": "multi-choice",
+      "tags": {
+        "Familie / Zeit / Gesundheit": "freedom",
+        "Finanzielle Sicherheit / Ruhestand": "security",
+        "Neue Ideen / Startup starten": "growth",
+        "Weniger Verantwortung / Stress": "relief",
+        "Anerkennung für Lebensleistung": "ego"
+      }
+    }
+  ],
+  "score_ranges": {
+    "0-49": {
+      "label": "Exit-Ready: Niedrig",
+      "comment": "Aktuell schwer verkäuflich – das Unternehmen hängt stark an dir, hat wenig Struktur oder Umsatzstabilität."
+    },
+    "50-74": {
+      "label": "Exit-Ready: Mittel",
+      "comment": "Teilweise verkaufsfähig – mit klaren Hebeln (Struktur, Retention, Team) kannst du den Wert deutlich steigern."
+    },
+    "75-100": {
+      "label": "Exit-Ready: Hoch",
+      "comment": "Sehr gute Verkaufschancen – dein Unternehmen ist strukturiert, wachsend und attraktiv für Käufer."
+    }
+  },
+  "valuation_multiples": {
+    "Agentur": {
+      "projektbasiert": [1.0, 2.0],
+      "retainer": [2.0, 3.0]
+    },
+    "SaaS": {
+      "default": [3.0, 5.0]
+    },
+    "E-Commerce": {
+      "default": [2.0, 4.0]
+    },
+    "Coaching / Training": {
+      "default": [1.0, 2.0]
+    },
+    "Dienstleistung (offline)": {
+      "default": [1.5, 2.5]
+    }
+  },
+  "motivation_profiles": {
+    "freedom": "Freiheits-orientiert – will raus aus dem Tagesgeschäft, mehr Zeit für Leben/Familie.",
+    "security": "Sicherheits-orientiert – denkt in Ruhe an Nachfolge und finanzielle Absicherung.",
+    "growth": "Wachstums-orientiert – sucht Kapital oder Freiheit für neue Unternehmungen.",
+    "relief": "Stressreduktion – braucht Entlastung, Übergabe dringend nötig.",
+    "ego": "Status-orientiert – sieht Verkauf als Krönung der unternehmerischen Karriere."
+  }
+}
