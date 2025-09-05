@@ -1,0 +1,169 @@
+{
+  "title": "Everto Unternehmenswertrechner",
+  "description": "Berechnen Sie den realistischen Marktwert Ihres Unternehmens nach der Everto-Multiplikator-Methode",
+  "questions": [
+    {
+      "id": "industry",
+      "text": "In welcher Branche ist Ihr Unternehmen tätig?",
+      "type": "select",
+      "options": [
+        { "value": "SaaS", "label": "Software as a Service (SaaS)" },
+        { "value": "Handel", "label": "Handel" },
+        { "value": "Produktion", "label": "Produktion" },
+        { "value": "Dienstleistung", "label": "Dienstleistung" },
+        { "value": "Handwerk", "label": "Handwerk" },
+        { "value": "Gesundheitswesen", "label": "Gesundheitswesen" },
+        { "value": "IT", "label": "IT & Technologie (nicht SaaS)" },
+        { "value": "Gastronomie", "label": "Gastronomie & Hotellerie" },
+        { "value": "Immobilien", "label": "Immobilien" }
+      ]
+    },
+    {
+      "id": "yearlyRevenue",
+      "text": "Wie hoch war Ihr Jahresumsatz im letzten Geschäftsjahr?",
+      "type": "number",
+      "min": 0,
+      "step": 1000,
+      "placeholder": "z.B. 500000"
+    },
+    {
+      "id": "lastThreeYearsProfit",
+      "text": "Wie hoch war Ihr Unternehmensgewinn (EBIT) in den letzten drei Jahren?",
+      "type": "multiNumber",
+      "fields": [
+        {
+          "id": "profit1",
+          "label": "Gewinn vor 2 Jahren (€)",
+          "placeholder": "z.B. 80000"
+        },
+        {
+          "id": "profit2",
+          "label": "Gewinn vor 1 Jahr (€)",
+          "placeholder": "z.B. 100000"
+        },
+        {
+          "id": "profit3",
+          "label": "Aktueller Gewinn (€)",
+          "placeholder": "z.B. 120000"
+        }
+      ]
+    },
+    {
+      "id": "executiveSalary",
+      "text": "Wie hoch ist das Jahresgehalt des Geschäftsführers (brutto)?",
+      "type": "number",
+      "min": 0,
+      "step": 1000,
+      "placeholder": "z.B. 70000",
+      "helperText": "Diese Berechnung ist wichtig, da das Gehalt in der Everto-Methode zum EBIT addiert wird."
+    },
+    {
+      "id": "debt",
+      "text": "Wie hoch sind die aktuellen Unternehmensschulden?",
+      "type": "number",
+      "min": 0,
+      "step": 1000,
+      "placeholder": "z.B. 50000",
+      "helperText": "Schulden werden vom Unternehmenswert abgezogen."
+    },
+    {
+      "id": "nonOperationalAssets",
+      "text": "Wie hoch sind die nicht betriebsnotwendigen Vermögenswerte?",
+      "type": "number",
+      "min": 0,
+      "step": 1000,
+      "placeholder": "z.B. 30000",
+      "helperText": "Nicht-betriebsnotwendiges Vermögen (z.B. Geldanlage, Immobilien) wird zum Kaufpreis hinzugerechnet."
+    },
+    {
+      "id": "qualityFactors.customerDiversification",
+      "text": "Wie bewerten Sie die Kundenstruktur & -diversifikation Ihres Unternehmens?",
+      "description": "Bewerten Sie, wie breit Ihre Kundenbasis aufgestellt ist. Ein einzelner Kunde, der mehr als 30% Ihres Umsatzes ausmacht, bedeutet ein höheres Risiko.",
+      "type": "qualityFactor",
+      "options": [
+        { "value": -0.2, "label": "Stark konzentriert (1-2 Hauptkunden machen >50% des Umsatzes aus)" },
+        { "value": -0.1, "label": "Mäßig konzentriert (3-5 Hauptkunden machen >50% des Umsatzes aus)" },
+        { "value": 0, "label": "Ausgewogen (kein Kunde macht mehr als 20% des Umsatzes aus)" },
+        { "value": 0.1, "label": "Gut diversifiziert (kein Kunde macht mehr als 10% des Umsatzes aus)" },
+        { "value": 0.2, "label": "Hervorragend diversifiziert (breite Kundenbasis mit >100 aktiven Kunden)" }
+      ]
+    },
+    {
+      "id": "qualityFactors.recurringRevenue",
+      "text": "Wie hoch ist der Anteil wiederkehrender Umsätze in Ihrem Unternehmen?",
+      "description": "Höhere wiederkehrende Umsätze (z.B. durch Abonnements oder Wartungsverträge) steigern den Unternehmenswert.",
+      "type": "qualityFactor",
+      "options": [
+        { "value": -0.1, "label": "Keine wiederkehrenden Umsätze (0%)" },
+        { "value": 0, "label": "Geringer Anteil (1-20%)" },
+        { "value": 0.1, "label": "Mittlerer Anteil (21-50%)" },
+        { "value": 0.2, "label": "Hoher Anteil (51-80%)" },
+        { "value": 0.3, "label": "Sehr hoher Anteil (>80%)" }
+      ]
+    },
+    {
+      "id": "qualityFactors.managementTeam",
+      "text": "Wie bewerten Sie Ihr Führungsteam und die organisatorische Struktur?",
+      "description": "Ein Unternehmen, das nicht von einer einzelnen Person abhängig ist, hat einen höheren Wert.",
+      "type": "qualityFactor",
+      "options": [
+        { "value": -0.3, "label": "Starke Abhängigkeit vom Inhaber (nicht ersetzbar)" },
+        { "value": -0.1, "label": "Hohe Abhängigkeit vom Inhaber (schwer ersetzbar)" },
+        { "value": 0, "label": "Mittlere Abhängigkeit (teilweise delegiert)" },
+        { "value": 0.1, "label": "Geringe Abhängigkeit (gut delegiert)" },
+        { "value": 0.2, "label": "Unabhängig vom Inhaber (vollständig delegiert)" }
+      ]
+    },
+    {
+      "id": "qualityFactors.growthRate",
+      "text": "Wie hoch war die Wachstumsrate Ihres Unternehmens in den letzten Jahren?",
+      "description": "Unternehmen mit beständigem Wachstum sind wertvoller als stagnierende oder schrumpfende Unternehmen.",
+      "type": "qualityFactor",
+      "options": [
+        { "value": -0.2, "label": "Rückläufig (negatives Wachstum)" },
+        { "value": -0.1, "label": "Stagnierend (0-2% Wachstum)" },
+        { "value": 0, "label": "Moderat (3-10% Wachstum pro Jahr)" },
+        { "value": 0.1, "label": "Stark (11-25% Wachstum pro Jahr)" },
+        { "value": 0.3, "label": "Sehr stark (>25% Wachstum pro Jahr)" }
+      ]
+    },
+    {
+      "id": "qualityFactors.profitMargin",
+      "text": "Wie hoch ist die Gewinnmarge Ihres Unternehmens?",
+      "description": "Höhere Gewinnmargen deuten auf ein solides Geschäftsmodell hin und erhöhen den Unternehmenswert.",
+      "type": "qualityFactor",
+      "options": [
+        { "value": -0.2, "label": "Niedrig (<5%)" },
+        { "value": -0.1, "label": "Unterdurchschnittlich (5-10%)" },
+        { "value": 0, "label": "Durchschnittlich (10-15%)" },
+        { "value": 0.1, "label": "Überdurchschnittlich (15-25%)" },
+        { "value": 0.2, "label": "Hoch (>25%)" }
+      ]
+    },
+    {
+      "id": "qualityFactors.marketPosition",
+      "text": "Wie bewerten Sie die Marktposition und den Wettbewerbsvorteil Ihres Unternehmens?",
+      "description": "Ein Unternehmen mit einer starken Marktposition und klaren Wettbewerbsvorteilen ist wertvoller.",
+      "type": "qualityFactor",
+      "options": [
+        { "value": -0.1, "label": "Schwache Position ohne klare Differenzierung" },
+        { "value": 0, "label": "Durchschnittliche Position mit einigen Wettbewerbsvorteilen" },
+        { "value": 0.1, "label": "Starke Position mit klaren Wettbewerbsvorteilen" },
+        { "value": 0.2, "label": "Marktführer in einer Nische" },
+        { "value": 0.3, "label": "Dominante Marktposition" }
+      ]
+    }
+  ],
+  "multipliers": {
+    "SaaS": 7.5,
+    "Handel": 3.5,
+    "Produktion": 4.2,
+    "Dienstleistung": 2.8,
+    "Handwerk": 2.5,
+    "Gesundheitswesen": 5.0,
+    "IT": 6.0,
+    "Gastronomie": 2.2,
+    "Immobilien": 8.0,
+    "default": 3.0
+  }
+}

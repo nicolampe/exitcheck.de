@@ -1,0 +1,224 @@
+{
+  "questions": [
+    {
+      "id": "q0",
+      "text": "Welche Gesellschaftsform hat Ihr Unternehmen?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Personengesellschaft", "value": 1 },
+        { "label": "Kapitalgesellschaft", "value": 2 },
+        { "label": "Einzelunternehmen", "value": 3 }
+      ],
+      "score_weight": 0.5
+    },
+    {
+      "id": "q1",
+      "text": "In welcher Branche ist Ihr Unternehmen tätig?",
+      "type": "dropdown",
+      "options": [
+        "IT & Software",
+        "Beratung & Dienstleistungen",
+        "Handel & E-Commerce",
+        "Handwerk & Produktion",
+        "Gesundheitswesen",
+        "Gastronomie & Hotellerie",
+        "Finanzdienstleistungen",
+        "Bildung & Training",
+        "Andere"
+      ],
+      "score_weight": 1.0
+    },
+    {
+      "id": "q2",
+      "text": "Wie hoch ist der jährliche Umsatz Ihres Unternehmens?",
+      "type": "number",
+      "score_weight": 1.5
+    },
+    {
+      "id": "q3",
+      "text": "Wie hoch ist der jährliche Gewinn (EBITDA) Ihres Unternehmens?",
+      "type": "number",
+      "score_weight": 2.0
+    },
+    {
+      "id": "q3b",
+      "text": "Wie hoch ist das jährliche Geschäftsführergehalt (brutto) in den letzten 12 Monaten? Falls mehrere Geschäftsführer, bitte addieren.",
+      "type": "number",
+      "score_weight": 0.0
+    },
+    {
+      "id": "q3c",
+      "text": "Ist der/die Geschäftsführer auch Inhaber/in des Unternehmens?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Ja", "value": true },
+        { "label": "Nein", "value": false }
+      ],
+      "score_weight": 0.0
+    },
+    {
+      "id": "q4",
+      "text": "Wie lange besteht Ihr Unternehmen bereits?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Weniger als 2 Jahre", "value": 1 },
+        { "label": "2-5 Jahre", "value": 2 },
+        { "label": "5-10 Jahre", "value": 3 },
+        { "label": "Mehr als 10 Jahre", "value": 4 }
+      ],
+      "score_weight": 1.0
+    },
+    {
+      "id": "q5",
+      "text": "Welches Umsatzmodell beschreibt Ihr Geschäft am besten?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Einmalige Verkäufe / Projekte", "value": 1 },
+        { "label": "Mischmodell (Projekte und wiederkehrende Umsätze)", "value": 2 },
+        { "label": "Überwiegend wiederkehrende Umsätze (Abonnements, etc.)", "value": 3 },
+        { "label": "Langfristige Verträge mit garantierten Umsätzen", "value": 4 }
+      ],
+      "score_weight": 2.0
+    },
+    {
+      "id": "q6",
+      "text": "Wie abhängig ist Ihr Unternehmen von Ihnen als Gründer/in oder Geschäftsführer/in?",
+      "type": "scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "options": [
+        "Sehr stark abhängig - Das Unternehmen läuft nicht ohne Sie",
+        "Stark abhängig - Wichtige Entscheidungen und Kunden hängen von Ihnen ab", 
+        "Teilweise abhängig - Sie sind wichtig, aber nicht unersetzlich",
+        "Wenig abhängig - Das Unternehmen läuft größtenteils ohne Sie",
+        "Nicht abhängig - Das Unternehmen funktioniert unabhängig von Ihnen"
+      ],
+      "score_weight": 2.5,
+      "invert_score": true
+    },
+    {
+      "id": "q7",
+      "text": "Wie gut sind die internen Prozesse Ihres Unternehmens dokumentiert?",
+      "type": "scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "options": [
+        "Nicht dokumentiert - Prozesse existieren nur im Kopf der Mitarbeiter",
+        "Kaum dokumentiert - Nur wenige Kernprozesse sind einfach dokumentiert",
+        "Teilweise dokumentiert - Wichtige Prozesse sind erfasst",
+        "Gut dokumentiert - Die meisten Prozesse sind standardisiert und dokumentiert",
+        "Hervorragend dokumentiert - Alle Prozesse sind detailliert dokumentiert und werden regelmäßig aktualisiert"
+      ],
+      "score_weight": 1.5
+    },
+    {
+      "id": "q8",
+      "text": "Wie stark ist die Kundenbindung in Ihrem Unternehmen?",
+      "type": "scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "options": [
+        "Sehr schwach - Hohe Kundenabwanderung, kaum Stammkunden",
+        "Schwach - Viele einmalige Käufe, wenige wiederkehrende Kunden",
+        "Mittelmäßig - Mischung aus Einmal- und Stammkunden",
+        "Stark - Überwiegend treue Stammkunden mit wiederkehrenden Käufen",
+        "Sehr stark - Langjährige, loyale Kundenbasis mit hoher Weiterempfehlungsrate"
+      ],
+      "score_weight": 2.0
+    },
+    {
+      "id": "q9",
+      "text": "Was sind Ihre Hauptmotivationen für einen Unternehmensverkauf?",
+      "type": "multi-choice",
+      "tags": {
+        "Ich möchte mehr Zeit für mich und meine Familie haben": "freedom",
+        "Ich möchte finanziell aussorgen und abgesichert sein": "security",
+        "Ich möchte neue Projekte und Ideen verwirklichen": "growth",
+        "Ich möchte weniger Stress und Verantwortung tragen": "relief",
+        "Ich möchte den Höhepunkt meiner unternehmerischen Leistung realisieren": "ego"
+      },
+      "score_weight": 0.5
+    },
+    {
+      "id": "q10",
+      "text": "Wie dringend möchten Sie Ihr Unternehmen verkaufen?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Ich erkunde nur die Möglichkeiten", "value": 1 },
+        { "label": "In den nächsten 2-3 Jahren", "value": 2 },
+        { "label": "In den nächsten 12 Monaten", "value": 3 },
+        { "label": "So schnell wie möglich", "value": 4 }
+      ],
+      "score_weight": 0.5,
+      "urgency": {
+        "1": "nurture",
+        "2": "cold",
+        "3": "warm",
+        "4": "hot"
+      }
+    }
+  ],
+  "score_ranges": {
+    "0-25": {
+      "label": "Nicht Exit-bereit",
+      "comment": "Ihr Unternehmen benötigt noch grundlegende Vorbereitungen, um verkaufsfähig zu sein. Der Wert könnte durch gezielte Maßnahmen deutlich gesteigert werden."
+    },
+    "26-50": {
+      "label": "Bedingt Exit-bereit",
+      "comment": "Ihr Unternehmen hat grundlegende Voraussetzungen für einen Verkauf, aber es gibt noch erhebliches Potenzial zur Wertsteigerung."
+    },
+    "51-75": {
+      "label": "Überwiegend Exit-bereit",
+      "comment": "Ihr Unternehmen ist gut aufgestellt für einen Verkauf. Mit gezielten Optimierungen könnte der Wert noch gesteigert werden."
+    },
+    "76-100": {
+      "label": "Voll Exit-bereit",
+      "comment": "Ihr Unternehmen ist in einer ausgezeichneten Position für einen erfolgreichen Verkauf zu einem attraktiven Preis."
+    }
+  },
+  "valuation_multiples": {
+    "IT & Software": {
+      "base": 5.5,
+      "premium": 8.0
+    },
+    "Beratung & Dienstleistungen": {
+      "base": 2.5,
+      "premium": 4.0
+    },
+    "Handel & E-Commerce": {
+      "base": 3.0,
+      "premium": 5.0
+    },
+    "Handwerk & Produktion": {
+      "base": 4.0,
+      "premium": 6.0
+    },
+    "Gesundheitswesen": {
+      "base": 5.0,
+      "premium": 7.0
+    },
+    "Gastronomie & Hotellerie": {
+      "base": 2.0,
+      "premium": 3.5
+    },
+    "Finanzdienstleistungen": {
+      "base": 4.5,
+      "premium": 7.0
+    },
+    "Bildung & Training": {
+      "base": 3.5,
+      "premium": 5.5
+    },
+    "Andere": {
+      "base": 3.0,
+      "premium": 5.0
+    }
+  },
+  "motivation_profiles": {
+    "freedom": "Freiheitsorientiert",
+    "security": "Sicherheitsorientiert",
+    "growth": "Wachstumsorientiert",
+    "relief": "Entlastungssuchend",
+    "ego": "Anerkennungsorientiert"
+  }
+}

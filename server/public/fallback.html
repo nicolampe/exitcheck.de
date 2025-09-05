@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exitcheck.de - Unternehmensberatung für Ihren Exit</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: #fff; border-bottom: 1px solid #eee; padding: 1rem 0; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #2563eb; }
+        nav a { margin-left: 2rem; text-decoration: none; color: #666; }
+        nav a:hover { color: #2563eb; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4rem 0; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
+        .btn { display: inline-block; padding: 1rem 2rem; background: #2563eb; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; }
+        .btn:hover { background: #1d4ed8; }
+        .features { padding: 4rem 0; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .feature { padding: 2rem; border: 1px solid #eee; border-radius: 8px; }
+        .feature h3 { color: #2563eb; margin-bottom: 1rem; }
+        footer { background: #f8fafc; padding: 2rem 0; margin-top: 4rem; text-align: center; color: #666; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .header-content { flex-direction: column; gap: 1rem; }
+            nav a { margin-left: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">exitcheck.de</div>
+                <nav>
+                    <a href="#bewertung">Bewertung</a>
+                    <a href="#beratung">Beratung</a>
+                    <a href="#kontakt">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Maximieren Sie Ihren Unternehmenswert</h1>
+            <p>Professionelle Bewertung und Exit-Strategien für mittelständische Unternehmen</p>
+            <a href="#bewertung" class="btn">Kostenlose Bewertung starten</a>
+        </div>
+    </section>
+
+    <section class="features" id="bewertung">
+        <div class="container">
+            <h2>Ihre Vorteile mit exitcheck.de</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🎯 Präzise Bewertung</h3>
+                    <p>Ermittlung des aktuellen Marktwerts Ihres Unternehmens durch bewährte Bewertungsverfahren</p>
+                </div>
+                <div class="feature">
+                    <h3>📈 Exit-Readiness Check</h3>
+                    <p>Analyse Ihrer Verkaufsbereitschaft und Identifikation von Optimierungspotenzialen</p>
+                </div>
+                <div class="feature">
+                    <h3>💼 Strategische Beratung</h3>
+                    <p>Individuelle Empfehlungen zur Wertsteigerung und optimalen Exit-Vorbereitung</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f8fafc; padding: 3rem 0;" id="kontakt">
+        <div class="container" style="text-align: center;">
+            <h2>Bereit für Ihren erfolgreichen Exit?</h2>
+            <p style="margin: 1rem 0 2rem;">Lassen Sie uns gemeinsam den Wert Ihres Unternehmens maximieren.</p>
+            <a href="mailto:info@exitcheck.de" class="btn">Jetzt Kontakt aufnehmen</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 exitcheck.de - Alle Rechte vorbehalten | 
+               <a href="/impressum" style="color: #666;">Impressum</a> | 
+               <a href="/datenschutz" style="color: #666;">Datenschutz</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
